@@ -1,0 +1,47 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+div.form-group{
+  width: 50%;
+  margin: 1rem auto;
+}
+input.form-control{
+  border-radius: 0;
+}
+table.table.table-striped{
+  width: 70%;
+  margin: 0 auto;
+}
+th.user-name{
+  cursor: pointer;
+  transition: all .5s;
+}
+
+@keyframes tooltip {
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: .9;
+  }
+}
+@keyframes tooltipRemove {
+  0%{
+    opacity: .9;
+  }
+  100%{
+    opacity: 0;
+  }
+}
+.name-hover{
+  background-color: #212121;
+  color: #f7f7f7;
+  padding: 1rem;
+  animation: tooltip 1s;
+  position: absolute;
+}
+.name-offhover{
+  animation: tooltipRemove 1s;
+}
